@@ -1,0 +1,51 @@
+@import "../variables";
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    margin: 10vh;
+
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 20vh;
+        height: 45vh;
+        .icon i {
+            display: none;
+        }
+    }
+
+    .title {
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    }
+
+    .icon {
+        i {
+            font-size: 30vh;
+        }
+        display: flex;
+        justify-content: center;
+        video {
+            width: 50%;
+        }
+    }
+}
+.wave {
+    fill: $brandColor;
+}
+
+.content {
+    background: $brandColor;
+    padding-bottom: 5em;
+}

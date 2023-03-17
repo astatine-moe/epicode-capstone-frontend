@@ -1,0 +1,51 @@
+@import "../variables";
+
+.navbar {
+    --accent-color: $brandColor;
+    background: black;
+    border-width: 0px;
+    min-height: 60px;
+    padding: 0;
+
+    .nav-item {
+        font-size: 0.75em;
+        border-right: 1px solid #191919;
+        position: relative;
+        text-align: center;
+        width: 72px;
+        &:first-of-type {
+            border-left: 1px solid #191919;
+        }
+        > a {
+            border-radius: 0px;
+            color: rgba(255, 255, 255, 0.75);
+            margin: 0px;
+            padding: 20px 15px;
+            text-shadow: none;
+            -webkit-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            -ms-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+        }
+
+        &:hover {
+            > a {
+                background: $brandColor;
+                color: #ffffff;
+            }
+            &.active {
+                > a {
+                    background: rgba(255, 255, 255, 0.1);
+                    color: #ffffff;
+                }
+            }
+        }
+        &.active {
+            > a {
+                border-bottom: 4px solid $brandColor;
+                padding: 20px 15px 16px 15px;
+                color: #ffffff;
+            }
+        }
+    }
+}
