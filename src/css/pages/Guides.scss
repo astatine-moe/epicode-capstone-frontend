@@ -1,0 +1,70 @@
+@import "../variables";
+
+.guides {
+    margin-top: 72px;
+}
+
+.guides__nav {
+    padding: 0px 0px 72px;
+
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        margin-bottom: 1em;
+    }
+    button {
+        background: transparent;
+        color: white;
+        border: none;
+        padding: 0.5em;
+        border-radius: 0.75em;
+        text-align: left;
+
+        &.active,
+        &:hover {
+            color: $brandColor;
+            background: rgba(0, 0, 0, 0.3);
+            font-weight: 600;
+        }
+    }
+}
+
+.guides__content {
+    background: $brandColor;
+    padding: 2em 4em;
+    border-radius: 0.75em;
+    h1 {
+        color: white;
+        font-size: 3em;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+}
+
+.search__bar {
+    display: flex;
+    width: 100%;
+    background: white;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+
+    &:focus-within {
+        box-shadow: 0 0 0 2px $brandColor;
+        outline: 2px solid black;
+    }
+
+    svg {
+        margin: 0.5em;
+        fill: rgba(0, 0, 0, 0.616);
+    }
+    input {
+        background: transparent;
+        border: none;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
